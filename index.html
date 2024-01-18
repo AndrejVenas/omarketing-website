@@ -19,7 +19,7 @@
   <script src="./js/main.js" defer></script>
 </head>
 
-<body>
+<body id="home">
   <header class="header">
     <div class="container">
       <div class="header__inner">
@@ -27,25 +27,27 @@
           <img src="images/logo.svg" alt="Логотип компании" class="logo__img">
         </a>
         <nav class="header__menu menu">
-          <button class="menu__btn">Меню</button>
+          <button class="menu__btn">
+            <span class="menu__btn--decor"></span>
+          </button>
           <ul class="menu__list">
             <li class="menu__item">
-              <a href="#" class="menu__link">HOME</a>
+              <a href="#home" class="menu__link">HOME</a>
             </li>
             <li class="menu__item">
-              <a href="#" class="menu__link">ABOUT US</a>
+              <a href="#about" class="menu__link">ABOUT US</a>
             </li>
             <li class="menu__item">
-              <a href="#" class="menu__link">PORTFOLIO</a>
+              <a href="#portfolio" class="menu__link">PORTFOLIO</a>
             </li>
             <li class="menu__item">
-              <a href="#" class="menu__link">OUR TEAM</a>
+              <a href="#team" class="menu__link">OUR TEAM</a>
             </li>
             <li class="menu__item">
-              <a href="#" class="menu__link">BLOG</a>
+              <a href="#blog" class="menu__link">BLOG</a>
             </li>
             <li class="menu__item">
-              <a href="#" class="menu__link">CONTACT</a>
+              <a href="#contact" class="menu__link">CONTACT</a>
             </li>
           </ul>
         </nav>
@@ -69,7 +71,7 @@
         </div>
       </div>
     </section>
-    <section class="about">
+    <section class="about" id="about">
       <div class="container">
         <div class="about__inner">
           <h2 class="about__title title">About Us</h2>
@@ -179,7 +181,7 @@
         </div>
       </div>
     </section>
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
       <div class="container">
         <div class="portfolio__top">
           <h2 class="portfolio__title title">Portfolio</h2>
@@ -251,7 +253,7 @@
         </div>
       </div>
     </section>
-    <section class="slider-blog">
+    <section class="slider-blog" id="blog">
       <div class="container">
         <div class="slider-blog__inner">
           <div class="slider-blog__item">
@@ -323,7 +325,7 @@
         </div>
       </div>
     </section>
-    <section class="team">
+    <section class="team" id="team">
       <div class="container">
         <h2 class="team__title title">
           Our Team
@@ -408,7 +410,7 @@
       </div>
     </div>
     
-    <section class="connection">
+    <section class="connection" id="contact">
       <div class="container">
         <h2 class="connection__title title">Get in Touch</h2>
         <div class="connection__inner">
@@ -459,8 +461,8 @@
           <a href="tel: +3806765252222" class="footer__contact-link">(38067) 65 252 222</a>
           <a href="mailto: info@mail.com" class="footer__contact-link">info@mail.com</a>
         </div>
-        <a href="#" class="go-top">
-          <img src="arrow-top.svg" alt="" class="go-top__img">
+        <a href="#home" class="go-top">
+          <img src="images/arrow-top.svg" alt="arrow to top " class="go-top__img">
         </a>
       </div>
     </div>
